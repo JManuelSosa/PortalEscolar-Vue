@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-VariableFont.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Italic-VariableFont.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+
+    /* Paleta de colores Conifer */
+    --conifer-50: 243, 254, 231;
+    --conifer-100: 228, 252, 203;
+    --conifer-200: 202, 248, 158;
+    --conifer-300: 166, 241, 101;
+    --conifer-400: 134, 229, 56; /* Color primario */
+    --conifer-500: 101, 203, 23;
+    --conifer-600: 76, 162, 14;
+    --conifer-700: 59, 123, 16;
+    --conifer-800: 50, 97, 19;
+    --conifer-900: 43, 83, 20;
+    --conifer-950: 19, 46, 5;
+
+    /* Variables Css */
+    --color-primary: rgb(var(--conifer-400));
+    --color-primary-hover: rgb(var(--conifer-500));
+    --color-primary-active: rgb(var(--conifer-600));
+    --color-secondary: rgb(219, 255, 60); /* Ejemplo: un amarillo para contraste */
+
+    --color-background: rgb(250, 250, 250);
+    --color-surface: rgb(255, 255, 255); /* Tarjetas, modales */
+    --color-text: rgb(var(--conifer-950));
+    --color-text-light: rgba(var(--conifer-950), 0.7);
+
+    --color-border: rgba(var(--conifer-950), 0.15);
+    --color-shadow: rgba(var(--conifer-950), 0.1);
+
+    --color-success: rgb(136, 236, 123);
+    --color-warning: rgb(238, 255, 86);
+    --color-error: rgb(255, 65, 65);
+
+    --color-contrast: rgb(var(--conifer-50));
+    
+    /* También puedes definir tamaños, fuentes, etc */
+    --font-base: 'Inter';
+    --font-size-base: 16px;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+    font-family: var(--font-base), sans-serif;
+    font-size: var(--font-size-base);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    min-height: 100dvh;
+}
